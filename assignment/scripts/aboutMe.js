@@ -13,7 +13,7 @@ let luckyNumber = 2;
 // 6 - Console log this sentence, adding in the variables you created above: 
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
-console.log(`My name is ${fullName}, and I think ${luckyNumber} is a winner!`)
+console.log(`My name is ${fullName}, and I think ${luckyNumber} is a winner!`);
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
@@ -28,14 +28,16 @@ pets += 2;
 const allowedPets = 2;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
-function adventure() {
-    if (adventurous === true) {
-        console.log('Adventures are great!');
-    } else {
-        console.log('How about we stay home?');
-    }
-}
-adventure();
+//commented out; using tenary operator on questions 18 instead. -xh
+// function adventure() {
+//     if (adventurous === true) {
+//         console.log('Adventures are great!');
+//     } else {
+//         console.log('How about we stay home?');
+//     }
+// }
+// adventure();
+
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
@@ -95,5 +97,13 @@ switch (true) {
 }
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+//A ternary operator evaluates a condition and executes a block of code based on the condition.
+//If the condition is true, expression1 is executed.
+//If the condition is false, expression2 is executed.
+//The ternary operator takes three operands, hence, the name ternary operator. 
+//It is also known as a conditional operator.
+//syntax is condition ? expression1 : expresson2 
 
+let adventure = (adventurous === true) ? 'Adventures are great!' : 'How about we stay home?';
+console.log (adventure);
 
