@@ -5,7 +5,7 @@ const firstName = 'Xai';
 const lastName = 'Hang';
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
-const fullName = firstName.concat(lastName);
+const fullName = firstName + ' ' + lastName;
 // 4 - Console log the value of `fullName`
 console.log(fullName); // Xai Hang
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
@@ -30,19 +30,19 @@ const allowedPets = 2;
 // if it's not true, console log "How about we stay home?"
 function adventure() {
     if (adventurous === true) {
-        console.log ('Adventures are great!');
+        console.log('Adventures are great!');
     } else {
-        console.log ('How about we stay home?');
+        console.log('How about we stay home?');
     }
 }
 adventure();
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-function luckyAdventure () {
+function luckyAdventure() {
     if (luckyNumber === 2 && adventurous === true) {
-        console.log ('Roll the dice');
-    } 
+        console.log('Roll the dice');
+    }
 }
 luckyAdventure();
 
@@ -52,16 +52,16 @@ luckyAdventure();
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
 
-function morePets () {
+function morePets() {
     if (pets < allowedPets) {
-        console.log ('I can have more pets!');
+        console.log('I can have more pets!');
     } else if (pets = allowedPets) {
-        console.log ('I have enough pets');
+        console.log('I have enough pets');
     } else {
-        console.log ('Oh no, I have too many pets!')
+        console.log('Oh no, I have too many pets!')
     }
 }
-morePets ();
+morePets();
 
 // STRETCH GOALS:
 
@@ -71,12 +71,28 @@ morePets ();
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
+
+
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
 //      "Second is the best" if your lucky number is 2
 //      "Third is the one with the polka dot dress" if your lucky number is 3
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
+switch (true) {
+    case (luckyNumber === 1):
+        console.log ('First is the worst');
+        break;
+    case (luckyNumber === 2):
+        console.log ('Second is the best');
+        break;
+    case (luckyNumber === 3):
+        console.log ('Third is the one with the polka dot dress');
+        break;
+    default: 
+        console.log ('Luck is what happens when preparation meets opportunity');
+        break;
+}
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
