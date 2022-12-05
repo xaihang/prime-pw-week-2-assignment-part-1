@@ -24,6 +24,7 @@ let pets = 5;
 let friendsPets = 2;
 // 11 - Add two pets to your `pets` variable
 pets += 2;
+
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 2;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
@@ -57,7 +58,7 @@ luckyAdventure();
 function morePets() {
     if (pets < allowedPets) {
         console.log('I can have more pets!');
-    } else if (pets = allowedPets) {
+    } else if (pets === allowedPets) {
         console.log('I have enough pets');
     } else {
         console.log('Oh no, I have too many pets!')
@@ -73,6 +74,18 @@ morePets();
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
+//let friendsPets = 2;
+//let pets = 5;
+// pets += 2;
+
+let mostPets;
+
+if (pets > friendsPets) {
+    mostPets = pets;
+} else {
+    mostPets = friendsPets;
+}
+console.log("Most Pets = ", mostPets);
 
 
 // 17 - Write a *switch* statement that logs:
@@ -83,16 +96,16 @@ morePets();
 //      You'll need to research how to use switch statements!
 switch (true) {
     case (luckyNumber === 1):
-        console.log ('First is the worst');
+        console.log('First is the worst');
         break;
     case (luckyNumber === 2):
-        console.log ('Second is the best');
+        console.log('Second is the best');
         break;
     case (luckyNumber === 3):
-        console.log ('Third is the one with the polka dot dress');
+        console.log('Third is the one with the polka dot dress');
         break;
-    default: 
-        console.log ('Luck is what happens when preparation meets opportunity');
+    default:
+        console.log('Luck is what happens when preparation meets opportunity');
         break;
 }
 
@@ -105,5 +118,5 @@ switch (true) {
 //syntax is condition ? expression1 : expresson2 
 
 let adventure = (adventurous === true) ? 'Adventures are great!' : 'How about we stay home?';
-console.log (adventure);
+console.log(adventure);
 
