@@ -10,7 +10,7 @@ const fullName = firstName + ' ' + lastName;
 console.log(fullName); // Xai Hang
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 let luckyNumber = 2;
-// 6 - Console log this sentence, adding in the variables you created above: 
+// 6 - Console log this sentence, adding in the variables you created above:
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
 console.log(`My name is ${fullName}, and I think ${luckyNumber} is a winner!`);
@@ -27,34 +27,33 @@ pets += 2;
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 2;
-// 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
+// 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
 //commented out; using tenary operator on questions 18 instead. -xh
 // if (adventurous === true) {
-//     console.log('Adventures are great!');
+//   console.log("===Adventures are great!");
 // } else {
-//     console.log('How about we stay home?');
+//   console.log("===How about we stay home?");
 // }
-
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
 if (luckyNumber === 2 && adventurous === true) {
-    console.log('Roll the dice');
+  console.log('Roll the dice');
 }
 
-// 15 - Write a conditional that console logs "I can have more pets!" 
+// 15 - Write a conditional that console logs "I can have more pets!"
 //if the value of `pets` is less than the value of `allowedPets`,
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
 
 if (pets < allowedPets) {
-    console.log('I can have more pets!');
+  console.log('I can have more pets!');
 } else if (pets === allowedPets) {
-    console.log('I have enough pets');
+  console.log('I have enough pets');
 } else {
-    console.log('Oh no, I have too many pets!')
+  console.log('Oh no, I have too many pets!');
 }
 
 // STRETCH GOALS:
@@ -62,7 +61,7 @@ if (pets < allowedPets) {
 // 16 - Make a variable called `mostPets` and a conditional that
 // correctly checks the `pets` and `friendsPets` variables, and
 // assigns the highest value to `mostPets`. There's several possibilities --
-// be sure to think through all the scenarios. 
+// be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
 
 //let friendsPets = 2;
@@ -72,12 +71,11 @@ if (pets < allowedPets) {
 let mostPets;
 
 if (pets > friendsPets) {
-    mostPets = pets;
+  mostPets = pets;
 } else {
-    mostPets = friendsPets;
+  mostPets = friendsPets;
 }
 console.log(mostPets);
-
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
@@ -85,29 +83,30 @@ console.log(mostPets);
 //      "Third is the one with the polka dot dress" if your lucky number is 3
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
-switch (true) {
-    case (luckyNumber === 1):
-        console.log('First is the worst');
-        break;
-    case (luckyNumber === 2):
-        console.log('Second is the best');
-        break;
-    case (luckyNumber === 3):
-        console.log('Third is the one with the polka dot dress');
-        break;
-    default:
-        console.log('Luck is what happens when preparation meets opportunity');
-        break;
+switch (luckyNumber) {
+  case 1:
+    console.log('First is the worst');
+    break;
+  case 2:
+    console.log('Second is the best');
+    break;
+  case 3:
+    console.log('Third is the one with the polka dot dress');
+    break;
+  default:
+    console.log('Luck is what happens when preparation meets opportunity');
+    break;
 }
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 //A ternary operator evaluates a condition and executes a block of code based on the condition.
 //If the condition is true, expression1 is executed.
 //If the condition is false, expression2 is executed.
-//The ternary operator takes three operands, hence, the name ternary operator. 
+//The ternary operator takes three operands, hence, the name ternary operator.
 //It is also known as a conditional operator.
-//syntax is condition ? expression1 : expresson2 
-
-let adventure = (adventurous === true) ? 'Adventures are great!' : 'How about we stay home?';
-console.log(adventure);
-
+//syntax is condition ? expression1 : expresson2
+// console.log("adventurous", adventurous);
+adventurous
+  ? console.log('Adventures are great!')
+  : console.log('How about we stay home?');
+//
