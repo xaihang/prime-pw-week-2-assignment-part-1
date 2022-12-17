@@ -5,8 +5,8 @@ const firstName = 'Xai';
 const lastName = 'Hang';
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
-// const fullName = firstName + ' ' + lastName; //the operator method of combing variables 
-const fullName = (`${firstName} ${lastName}`); // Template literals or template strings 
+// const fullName = firstName + ' ' + lastName; //the operator method of combing variables
+const fullName = `${firstName} ${lastName}`; // Template literals or template strings
 // 4 - Console log the value of `fullName`
 console.log(fullName); // Xai Hang
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
@@ -107,7 +107,7 @@ switch (luckyNumber) {
 //It is also known as a conditional operator.
 //syntax is condition ? expression1 : expresson2
 // console.log("adventurous", adventurous);
-adventurous
-  ? console.log('Adventures are great!')
+adventurous ?
+    console.log('Adventures are great!')
   : console.log('How about we stay home?');
 //
